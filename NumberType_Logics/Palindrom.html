@@ -1,0 +1,12 @@
+<script>
+    let userNum = prompt("Enter a number");
+    let temp = parseInt(userNum);
+    let rvs = 0;
+    while (userNum > 0) {
+        let rmv = userNum % 10;
+        rvs = rvs * 10 + rmv;
+        userNum = Math.floor(userNum / 10);
+    }
+    if (rvs === temp) console.log("It's a palindrome :", temp);
+    else console.log("It's not a palindrome :", temp);
+</script>

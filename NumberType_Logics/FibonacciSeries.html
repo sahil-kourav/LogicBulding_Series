@@ -1,0 +1,22 @@
+<script>
+    let first = 0;
+    let second = 1;
+    let thired;
+    let num = parseInt(prompt("Enter a number"));
+    if (num <= 0) {
+        console.log("plz enter a positive value");
+    }
+    else if (num === 1) {
+        console.log(first);
+    }
+    else {
+        console.log(first);
+        console.log(second);
+        for (let i = 2; i < num; i++) {
+            thired = first + second;
+            console.log(thired);
+            first = second;
+            second = thired;
+        }
+    }
+</script>

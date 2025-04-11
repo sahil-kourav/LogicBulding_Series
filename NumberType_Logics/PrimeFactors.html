@@ -1,0 +1,15 @@
+<script>
+    let userNum = parseInt(prompt("Enter number"));
+    let result = [];
+    let divide = 2;
+    while (userNum >= 2) {
+      if(userNum % divide == 0){
+        result.push(divide);
+        userNum = userNum / divide;
+      }  
+      else {
+        divide++;
+      }
+    } 
+    console.log(result);
+</script>

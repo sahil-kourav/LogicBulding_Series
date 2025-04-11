@@ -1,0 +1,13 @@
+<script>
+    let userNum = prompt("ENter a number");
+    let temp = parseInt(userNum);
+    let getLength = userNum.length;
+    let sum = 0;
+    while (userNum > 0) {
+        let rmv = userNum % 10;
+        sum = sum + rmv ** getLength;
+        userNum = Math.floor(userNum / 10);
+    }
+    if (temp === sum) console.log("It's a Armstrong:", temp);
+    else console.log("It's not a Armstorng :", temp);
+</script>

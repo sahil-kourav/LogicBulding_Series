@@ -1,0 +1,69 @@
+<!-- <script>
+    let userNum = parseInt(prompt("Enter a number"));
+    if(userNum == 0 || userNum == 1){
+        console.log(userNum, "not prime");
+    }
+    else {
+        let i;
+        for(i = 2; i < userNum; i++){
+            if (userNum % i == 0) {
+                console.log(userNum, "not prime");
+                break;
+            }
+        }
+        if (i == userNum){
+            console.log(userNum, "it is prime");
+        }
+    }
+</script> -->
+
+
+<!-- <script>
+    // take a start and end input from user
+    let start = parseInt(prompt("Enter start number"));
+    let end = parseInt(prompt("Enter end number"));
+    for(let num = start; num <= end; num++){
+        if(num == 0 || num == 1){
+            console.log(num, "not prime");
+        }
+        else {
+            let i;
+            for(i = 2; i < num; i++){
+                if(num % i == 0){
+                    console.log(num, "not prime");
+                    break;
+                }
+            }
+            if(num == i){
+                console.log(num, "is prime");
+            }
+        }
+    }
+</script> -->
+
+
+<script>
+    // Write a JavaScript program that takes a start and end number as input from the user, 
+    // then calculates and prints only the prime numbers while skipping every second number in the range.
+    let skip = parseInt(prompt("Enter how many skip you want"));
+    let start = parseInt(prompt("Enter start number"));
+    let end = parseInt(prompt("Enter end number"));
+    
+    for (let num = start; num <= end; num++) {
+        if (num == 0 || num == 1) { }
+        else {
+            let i;
+            for (i = 2; i < num; i++) {
+                if (num % i == 0) {
+                    break;
+                }
+            }
+            if (num == i) {
+                if (skip % 3 == 0) {
+                    console.log(num, "is prime");
+                }
+                skip++;
+            }
+        }
+    }
+</script>
